@@ -1,0 +1,10 @@
+.main-button{
+    box-shadow: 0 0 30px skyblue;
+    background-color: blue;
+    color: white;
+    border: 1px solid lime;
+    padding: 10px;
+    cursor: pointer;
+    
+
+}
