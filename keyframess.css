@@ -1,0 +1,30 @@
+body{
+    background: rgb(148, 148, 148);
+}
+
+.box{
+    background: white; 
+    width: 150px;
+    height: 150px;
+    position: relative;
+    animation-name: meineanimace;
+    animation-duration: 5555ms;
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes meineanimace {
+    0% {background-color: red; left: 600px; top: 250px; border-radius: 50% 50% 50% 50%;} 
+    25% {background-color: orangered; left: 1200px; top: 0px; border-radius: 0% 0% 0% 50%;}
+    30% {background-color: orange; left: 1200px; top: 140px; border-radius:50% 0% 0% 50%;}
+    35% {background-color: yellow; left: 1200px; top: 155px; border-radius:50% 0% 0% 50%;}
+    40% {background-color: yellowgreen; left: 1200px; top: 300px; border-radius: 50% 0% 0% 50%}
+    45% {background-color: green; left: 1200px; top: 420px; border-radius: 50% 0% 0% 50%}
+    50% {background-color:  blue; left: 1200px; top: 495px; border-radius: 50% 0% 0% 0%;}
+    65% {background-color:  purple; left: 0px; top: 0px; border-radius: 0% 0% 50% 0% ;}
+    70% {background-color: brown; left: 0px; top: 155px; border-radius: 0% 50% 50% 0% ;}
+    75% {background-color: orangered; left: 0px; top: 300px; border-radius: 0% 50% 50% 0% ;}
+    80% {background-color: black; left: 0px; top: 420px; border-radius: 0% 50% 50% 0% ;}
+    85% {background-color: lightgrey; left: 0px; top: 495px; border-radius: 0% 50% 0% 0% ;}
+    100% {background-color: white; left: 600px; top: 250px; border-radius: 50% 50% 50% 50% ;}
+}
