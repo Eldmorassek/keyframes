@@ -3,18 +3,18 @@ body{
 }
 
 .box{
-    background: white; 
+    background: white;
     width: 150px;
     height: 150px;
     position: relative;
     animation-name: meineanimace;
     animation-duration: 5555ms;
     animation-fill-mode: forwards;
-    
+
 }
 
 @keyframes meineanimace {
-    0% {background-color: red; left: 600px; top: 250px; border-radius: 50% 50% 50% 50%;} 
+    0% {background-color: red; left: 600px; top: 250px; border-radius: 50% 50% 50% 50%;}
     25% {background-color: orangered; left: 1200px; top: 0px; border-radius: 0% 0% 0% 50%;}
     30% {background-color: orange; left: 1200px; top: 140px; border-radius:50% 0% 0% 50%;}
     35% {background-color: yellow; left: 1200px; top: 155px; border-radius:50% 0% 0% 50%;}
@@ -27,4 +27,11 @@ body{
     80% {background-color: black; left: 0px; top: 420px; border-radius: 0% 50% 50% 0% ;}
     85% {background-color: lightgrey; left: 0px; top: 495px; border-radius: 0% 50% 0% 0% ;}
     100% {background-color: white; left: 600px; top: 250px; border-radius: 50% 50% 50% 50% ;}
+}
+
+a {
+    border: 1px solid red;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
 }
