@@ -1,8 +1,8 @@
 .main-button{
-    box-shadow: 0 0 30px skyblue;
-    background-color: blue;
+    box-shadow: 0 0 50px lime;
+    background-color: limegreen;
     color: white;
-    border: 1px solid lime;
+    border: 2.5px solid black;
     padding: 10px;
     cursor: pointer;
     
