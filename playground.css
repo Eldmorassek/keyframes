@@ -54,3 +54,12 @@
     left: 800px;
     padding: 25px;
 }
+
+select, input{
+    width: 200px;
+    height: 30px;
+    padding: 2px;
+    font-size: 25px;
+    font-family: "Comic Sans MS";
+}
+
