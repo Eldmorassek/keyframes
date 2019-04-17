@@ -1,0 +1,56 @@
+body{
+    -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
+}
+#start-game{
+    box-shadow: 0 0 10px blueviolet;
+    background-color: blue;
+    color: white;
+    border: 1px solid black;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+}
+p{
+    text-align: center;
+}
+.game-status{
+    /*left: 46%;
+    position: absolute;*/
+    text-align: center;
+}
+
+.player-1{/* pc*/
+    float: left;
+    width: 45%;
+    height:  100px;
+    background-color: red;
+    text-align: right;
+    padding: 20px;
+}
+
+.player-2{/* hráč*/
+    float: right;
+    width: 45%;
+    height:  100px;
+    background-color: blue;
+    color:white;
+    text-align: left;
+    padding: 20px;
+}
+
+.mp3-panel{
+    width: 99%;
+    height: 55px;
+    background-color: skyblue;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-family:"Comic sans MS";
+    font-size: 40px;
+    box-shadow: 0 0 10px blue;
+}
+
+.mp3-panel a{
+    text-decoration: none;
+    color: black;
+}
