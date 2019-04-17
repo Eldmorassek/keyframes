@@ -4,7 +4,7 @@
 // var ondra = "Borec" // ondra je borec 
 // ondra == "Borec"  je ondra borec? 
  
- 
+
 $(document).ready(function(){ 
  
     $('.game-status').text('Čeká se na start');

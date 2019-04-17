@@ -54,3 +54,8 @@ p{
     text-decoration: none;
     color: black;
 }
+
+.my-text{
+    text-align: center;
+    font-family:"Comic sans MS";
+}
