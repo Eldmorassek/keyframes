@@ -7,6 +7,7 @@
  
 $(document).ready(function(){ 
  
+    $('.game-status').text('Čeká se na start');
     var startGame = false; 
  
     var playerName1 = "PC"; 
@@ -54,18 +55,25 @@ $(document).ready(function(){
        // console.log(event.which); // 1 = leve, 2 = prave 
        if(event.which == 1){ 
            damageToPc(5); 
-       } 
+       }
     }); 
+
     $("#start-game").on('click', function(){ 
         startGame = true; 
- 
+        $('.game-status').text('Hra začala');
         $("#start-music").get(0).play(); 
     }); 
  
-    setInterval(function(){ 
-            healPc(5); 
-            damageToPlayer(5); 
-    }, 400); 
+    var timer = setInterval(tick, 150); 
+
+    function tick(){
+        if(isEndOfTheGame()){ // skočila hra?
+            clearInterval(timer); //  pokud ano, zrušíme časovač
+            startGame = false;
+        } 
+        healPc(5); 
+        damageToPlayer(5); 
+    }
  
     function healPc(amount) { 
         if(startGame){ 
@@ -86,15 +94,20 @@ $(document).ready(function(){
         } 
     } 
    
+    function isEndOfTheGame() {
+        if(playerHp1 == 0 || playerHp2 == 0) { // je HP hráče nebo počítač rovno 0 ?
+            $('.game-status').text('Konec hry');
+            return true;
+        } 
+        return false;
+    }
+    
+
+
+
+
 }); 
  
-function playerHp1(amount) {
-    if(playerHp1 = 0 ){
-       
-
-    }
-}
-
 // vykreslime hrace v html 
 // pridame k nim jmeno a HP  přes javascript 
 // jak zjistit jaka klaves byla zmačnkutá 

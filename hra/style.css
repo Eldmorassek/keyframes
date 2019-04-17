@@ -2,7 +2,6 @@ body{
     -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
 }
 #start-game{
-    margin-left: 47.5%;
     box-shadow: 0 0 10px blueviolet;
     background-color: blue;
     color: white;
@@ -10,6 +9,14 @@ body{
     padding: 10px;
     cursor: pointer;
     position: relative;
+}
+p{
+    text-align: center;
+}
+.game-status{
+    /*left: 46%;
+    position: absolute;*/
+    text-align: center;
 }
 
 .player-1{/* pc*/
@@ -29,4 +36,21 @@ body{
     color:white;
     text-align: left;
     padding: 20px;
+}
+
+.mp3-panel{
+    width: 99%;
+    height: 55px;
+    background-color: skyblue;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-family:"Comic sans MS";
+    font-size: 40px;
+    box-shadow: 0 0 10px blue;
+}
+
+.mp3-panel a{
+    text-decoration: none;
+    color: black;
 }
